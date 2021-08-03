@@ -1,8 +1,8 @@
 IMAGE CAPTION GENERATOR
 
-Introduction
+Introduction: 
 Being able to automatically describe the content of an image using properly formed English sentences is a very challenging task, but it could have great impact, for instance by helping visually impaired people better understand the content of images on the web. Image captioning aims to automatically generate a sentence description for an image. It takes an image as input and generates an English sentence as output, describing the contents of the image. The task is rather complex, as the concepts of both computer vision and natural language processing domains are combined. The working model would be developed using the concepts of a Convolution Neural Network (CNN) and Long Short Term Memory (LSTM) model. The CNN works as an encoder to extract features from images and LSTM works as a decoder to generate words describing image. This problem is multimodal, which generates the need to construct a hybrid model that can leverage the problem's multidimensionality. Approaches such as prototype based, and retrieval based  approaches  have  historically  been  used  to  solve  the  issue.
-Problem statement
+Problem statement:
 To develop a system for users, which can automatically  generate the description of an image with the use of CNN along with LSTM. Automatically describing the content of images using natural language is a fundamental and challenging task. With the advancement in computing power along with the availability of huge datasets, building models that can generate captions for an image has become possible. Given a picture, it is natural for a person to explain an immense number of details about this image with a fast glance. Although great development has been made in computer vision, tasks such as recognizing an object, action classification, image classification, attribute classification and scene recognition are possible, but it is a relatively new task to let a computer describe an image that is forwarded to it in the form of a human-like sentence.
 Flow chart and steps involved
 
@@ -88,6 +88,6 @@ Christopher Elamri, Teun de Planque	VGG16
 METEO:19.4
 CIDEr: 65.8
 
-Literature review
+Literature review:
 Dr. Vinayak D. Shinde, Mahiman P. Dave used Flickr_8K dataset. The model used deep neural networks such as CNN which processes the data that has input shape like a 2D matrix and LSTM which is used in RNN. CNN model is used  to extract features of an image. These features are then fed into a LSTM model to generate a description of the image in grammatically correct English sentences describing the surroundings. Oriol Vinyals, Alexander Toshev used feature extraction using CNN on dataset Pascal,Flickr30k,COCO and SBU which made an accuracy of 0.59-Pascal, 0.66- Flickr30k, 0.277- COCO, 0.28- SBU. Garima Sharma used data set Flickr8k with CNN VGG architecture, LSTM and GRU. Dinesh Sreekanthan, Amutha A.L used dataset Flickr8k with CNN-VGG and LSTM which made an accuracy of Bleu Score- 0.683. B.Krishnakumar, K.Kousalya used CNN-VGG and LSTM on MSCOCO dataset. Yongqing Zhu, Xiangyang Li, Xue Li, Jian Sun used CNN-VGG.Net and LSTM on MSCOCO with an accuracy of 0.16. B.Krishnakumar, K.Kousalya
 Used MSCOCO dataset which includes 8091 images of 500X333pixels and has to be pre-defined dataset of 6000images, developed dataset of 1000 images and test dataset of 1000 images. The model used were VGG16-CNN . Raimonda Staniute and Dmitrij Šešok used dataset on MSCOCO with CNN encoder and RNN decoder. The model generated words to represent the image with a full grammatical and stylistically correct sentence. ResNet-50 is used for feature selection and LSTM was used for sequential work which made an accuracy of bleu score of 0.75. 
